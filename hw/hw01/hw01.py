@@ -40,7 +40,12 @@ def largest_factor(n):
     1
     """
     "*** YOUR CODE HERE ***"
-    return max([i for i in range(1,n) if n % i == 0])
+    #return max([i for i in range(1,n) if n % i == 0])
+    factor = n - 1
+    while(factor > 0):
+    	if n % factor == 0:
+    		return factor
+    	factor -= 1
 
 
 def if_function(condition, true_result, false_result):
@@ -90,10 +95,6 @@ def f():
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
     length.
-
-
-
-
     >>> a = hailstone(10)
     10
     5
@@ -106,14 +107,14 @@ def hailstone(n):
     7
     """
     "*** YOUR CODE HERE ***"
-    a = 1
-    print(n)
+    length = 1
     while(n != 1):
+    	print(n)
         if n % 2 == 0:
-            n = n/2 #float
-            print(int(n))
+            #n = n/2 #float
+            n = n // 2
         else:
             n = 3*n + 1
-            print(int(n))
-        a = a + 1
-    return a
+        length += 1
+    print(n)
+    return length
