@@ -74,10 +74,7 @@ def falling(n, k):
     """
     "*** YOUR CODE HERE ***"
     i = 1
-    total = 1
-    if k == 0:
-        return 1
-    while(i<=k):
+    while(i <= k):
         total = total * n
         i,n = i + 1,n - 1
     return total
@@ -138,9 +135,9 @@ def guess_binary():
     while not correct:
         num_guesses += 1
         if is_too_high(guess):
-            upper = guess
-            guess = (lower + upper)//2
-        lower = guess
+            upper = guess - 1 #-1
+        else:
+            lower = guess + 1 #+1
         guess = (lower + upper)//2
         correct = is_correct(guess)
 
