@@ -39,20 +39,14 @@ def composite_identity(f, g):
     def isequal(x):
         a = compose1(f,g)
         b = compose1(g,f)
-        if a(x) == b(x):
-            return True
-        else:
-            return False
+        return a(x) == b(x)
     return isequal
-    """
-    def identity(x):
-        return compose1(f,g)(x) == compose1(g,f)(x)
-    return identity
-
-    return lambda x: f(g(x)) == g(f(x))
-
-    """
     
+    # def identity(x):
+    #     return compose1(f,g)(x) == compose1(g,f)(x)
+    # return identity
+
+    # return lambda x: f(g(x)) == g(f(x))
 
 
 def count_cond(condition):
@@ -98,7 +92,6 @@ def count_cond(condition):
         return count
     return counter
     """
-
 
 def cycle(f1, f2, f3):
     """Returns a function that is itself a higher-order function.
