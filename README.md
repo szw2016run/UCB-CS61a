@@ -9,8 +9,9 @@ Here are the solutions for all the lab, homework and projects.
 Finished
 
 Lab
-- [ ] Lab1
-- [ ] Lab2
+- [x] lab0
+- [x] Lab1
+- [x] Lab2
 - [ ] Lab3
 - [ ] Lab4
 - [ ] Lab5
