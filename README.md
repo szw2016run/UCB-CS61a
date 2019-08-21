@@ -14,8 +14,8 @@ Lab
 - [x] Lab2
 - [x] Lab3
 - [x] Lab4
-- [ ] Lab5
-- [ ] Lab6
+- [x] Lab5
+- [x] Lab6
 - [ ] Lab7
 - [ ] Lab8
 - [ ] Lab9
