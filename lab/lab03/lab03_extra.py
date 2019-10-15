@@ -62,8 +62,8 @@ def ten_pairs(n):
 
     # return helper(n, 10, 0)
     if n < 10:
-        return 0
-    return ten_pairs(n // 10) + count_digit(n // 10, 10 - n % 10)
+        return 0 # base case
+    return ten_pairs(n // 10) + count_digit(n // 10, 10 - n % 10) #分解为更小的问题，ten_pairs(n // 10),解决count_digit(n // 10, 10 - n % 10)
 
 def count_digit(n, target):
     if n == 0:
