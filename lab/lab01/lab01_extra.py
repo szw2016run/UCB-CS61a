@@ -89,7 +89,6 @@ def double_eights(n):
         last_digit = n % 10
         if last_digit == 8 and prev_eight:
             return True
-        #else if last_digit == 8: python中是elif
         elif last_digit == 8:
             prev_eight = True
         else:
