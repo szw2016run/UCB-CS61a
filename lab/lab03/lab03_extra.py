@@ -70,7 +70,7 @@ def count_digit(n, target):
         return 0
     else:
         if (n % 10 == target):
-            return count_digit(n // 10, target) + 1
+            return count_digit(n // 10, target) + 1 #分解为更小问题 recursion
         else:
             return count_digit(n // 10, target)
 
