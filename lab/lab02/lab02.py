@@ -13,3 +13,10 @@ def lambda_curry2(func):
     """
     "*** YOUR CODE HERE ***"
     return lambda x : lambda y : func(x, y)
+# not use lambda   
+# def lambda_curry2(func):
+#     def f(x):
+#         def g(y):
+#             return func(x,y)
+#         return g
+#     return f

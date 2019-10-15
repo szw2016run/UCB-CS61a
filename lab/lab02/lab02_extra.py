@@ -70,7 +70,16 @@ def count_cond(condition):
     # 列表表达式if else 组合
     # [i for i in range(10) if i % 2 == 0]
     # [i if i == 0 else 10 for i in range(10)]
-
+#not lambda
+# def count_cond(condition):
+#     def counter(n):
+#         i, count = 1, 0
+#         while (i <= n):
+#             if condition(n, i):
+#                 count += 1
+#             i += 1
+#         return count
+#     return counter
 def cycle(f1, f2, f3):
     """Returns a function that is itself a higher-order function.
 
@@ -117,7 +126,21 @@ def cycle(f1, f2, f3):
                     x = f3(f2(f1(x)))
                 return f2(f1(x))
             return h2
-
-
-
     return helper
+
+
+# def cycle(f1, f2, f3):
+#     def ret_fn(n):
+#         def ret(x):
+#             i = 0
+#             while i < n:
+#                 if i % 3 == 0:
+#                     x = f1(x)
+#                 elif i % 3 == 1:
+#                     x = f2(x)
+#                 else:
+#                     x = f3(x)
+#                 i += 1
+#             return x
+#         return ret
+#     return ret_fn
