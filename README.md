@@ -17,7 +17,7 @@ Lab
 - [x] Lab5
 - [x] Lab6
 - [x] Lab7
-- [x] Lab8
+- [ ] Lab8
 - [x] Lab9
 - [ ] Lab10 
 - [ ] Lab11
@@ -25,11 +25,11 @@ Lab
 
 Homework
 
-- [ ] hw1
-- [ ] hw2
-- [ ] hw3
-- [ ] hw4
-- [ ] hw5
+- [x] hw1
+- [x] hw2
+- [x] hw3
+- [x] hw4
+- [x] hw5
 - [ ] hw7
 - [ ] hw8
 - [ ] hw9
@@ -43,7 +43,7 @@ Project
 - [ ] Hog
 - [ ] Hog Contest
 - [ ] Maps
-- [ ] Ants
+- [x] Ants
 - [ ] Scheme
 - [ ] Scheme Art
 
